@@ -1,10 +1,12 @@
-NAME = timpark
+.PHONY: run win64 clean
 
-run: $(NAME)
-	./$(NAME)
+NAME = tinypark
 
 $(NAME): go.mod main.go pkg/adventure/*.go
 	go build -o $@ .
+
+run: $(NAME)
+	./$(NAME)
 
 win64:
 	GOOS=windows GOARCH=amd64 go build -ldflags "-H=windowsgui" -o $(NAME).exe .
@@ -12,5 +14,3 @@ win64:
 
 clean:
 	rm -f $(NAME) $(NAME).exe
-
-.PHONY: run win64 clean

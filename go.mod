@@ -1,4 +1,4 @@
-module github.com/vmaxer/timpark
+module github.com/vmaxer/tinypark
 
 go 1.27.2
 

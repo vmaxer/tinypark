@@ -67,5 +67,4 @@ venv/
 target/
 
 # Executables that may be built in this directory
-timpark
 tinypark

@@ -7,7 +7,7 @@ import (
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/inpututil"
 
-	adv "github.com/vmaxer/timpark/pkg/adventure"
+	adv "github.com/vmaxer/tinypark/pkg/adventure"
 )
 
 var flags = adv.Flags
